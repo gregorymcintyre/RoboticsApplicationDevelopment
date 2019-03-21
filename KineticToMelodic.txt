@@ -1,0 +1,12 @@
+/* CHANGE LOG
+ *
+ * This is a running log of changes made to the Robotics Labs to implement Melodic on Ubuntu rather than Kinetic on Ubuntu Mate.
+ *
+ */
+
+
+
+3.2 
+sudo apt-get install ros-melodic-rosserial-arduino ros-melodic-rosserial
+
+
