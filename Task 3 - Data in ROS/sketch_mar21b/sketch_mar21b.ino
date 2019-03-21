@@ -32,7 +32,7 @@ delay(100);
 }
 void loop()
 {
-static uint16_t lastSampleTime = 0;
+static uint16_t lastSampleTime = 10;
 if ((uint16_t)(millis() - lastSampleTime) >= 100)
 {
 lastSampleTime = millis();
