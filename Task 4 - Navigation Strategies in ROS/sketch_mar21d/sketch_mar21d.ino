@@ -9,9 +9,9 @@ ros::NodeHandle nh;
 std_msgs::Int8 msg;
 ros::Publisher pub("sensor", &msg);
 
-//ros::Publisher pl_pub("proxLeftSensor", &msg);
-//ros::Publisher pf_pub("proxFrontSensor", &msg);
-//ros::Publisher pr_pub("proxRightSensor", &msg);
+ros::Publisher pl_pub("proxLeftSensor", &msg);
+ros::Publisher pf_pub("proxFrontSensor", &msg);
+ros::Publisher pr_pub("proxRightSensor", &msg);
 
 void ros_handler( const geometry_msgs::Twist& cmd_msg) 
 {
@@ -45,6 +45,10 @@ void setup()
   proxSensors.initThreeSensors();
   nh.initNode();
   nh.advertise(pub);
+  
+  nh.advertise(pl_pub);
+  nh.advertise(pf_pub);
+  nh.advertise(pr_pub);
 }
 
 void forward(int time)
@@ -86,7 +90,6 @@ void publishReadings()
   msg.data = proxSensors.countsLeftWithLeftLeds();
   pub.publish( &msg);
   
-  /*
   msg.data = proxSensors.countsLeftWithLeftLeds();
   pl_pub.publish( &msg);
   
@@ -95,7 +98,6 @@ void publishReadings()
   
   msg.data = proxSensors.countsRightWithRightLeds();
   pr_pub.publish( &msg);
-  */
   
   nh.spinOnce();
   delay(100);
