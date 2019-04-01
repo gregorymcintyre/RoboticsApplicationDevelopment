@@ -1,3 +1,15 @@
+/*
+ * HD Task
+ *
+ * Greg McIntyre
+ * 1 APR 2018
+ * 
+ * Accurate wall avoidance using the Zumo’s full sensor array. Advanced solutions can also consider all IR emitters to each sensor
+ *
+ * the robot sucessfully avoids objects infront, to the left and right and moves away from the detected object
+ *
+ */
+
 #define USE_USBCON
 #include <Wire.h>
 #include <Zumo32U4.h>

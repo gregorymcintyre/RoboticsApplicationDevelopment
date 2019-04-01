@@ -1,3 +1,14 @@
+
+ # HD Task
+ #
+ # Greg McIntyre
+ # 1 APR 2018
+ # 
+ # Accurate wall avoidance using the Zumo’s full sensor array. Advanced solutions can also consider all IR emitters to each sensor
+ #
+ # the robot sucessfully avoids objects infront, to the left and right and moves away from the detected object
+ #
+
 #!/usr/bin/env python
 import rospy
 from std_msgs.msg import Int8
@@ -31,7 +42,7 @@ def callleft(data):
         vel_msg.linear.z = 0
         vel_msg.angular.x = 0
         vel_msg.angular.y = 0
-        vel_msg.angular.z = -2
+        vel_msg.angular.z = -2      #turn right
         pub.publish(vel_msg)
 
 def callright(data):
@@ -45,7 +56,7 @@ def callright(data):
         vel_msg.linear.z = 0
         vel_msg.angular.x = 0
         vel_msg.angular.y = 0
-        vel_msg.angular.z = 2
+        vel_msg.angular.z = 2       #turn left
         pub.publish(vel_msg)
 
 
