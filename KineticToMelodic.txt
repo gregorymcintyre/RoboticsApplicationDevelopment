@@ -9,4 +9,13 @@
 3.2 
 sudo apt-get install ros-melodic-rosserial-arduino ros-melodic-rosserial
 
+Lab Task 5
+3.1
+$ sudo apt-get install ros-melodic-turtle-tf2 ros-melodic-tf2-tools ros-melodiic-tf
+
+4.4
+$ roscd lab5
+$ cp /opt/ros/kinetic/share/turtle_tf2/rviz/turtle_rviz.rviz zumo.rviz
+
+$ cp /opt/ros/melodic/share/turtle_tf2/rviz/turtle_rviz.rviz zumo.rviz
 
