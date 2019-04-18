@@ -28,19 +28,19 @@ def stop():
 def handle_zumo_sensor(wall_msg):
 	global current_topic
 
-	if(wall_msg.data > 6):
+	if(wall_msg.data > 9):
 		new_topic = 2
 		stop() #actually publish a new message..
 	else:
 		new_topic = 1
 
-#only change topics if we need to.
-if(current_topic ==1 and new_topic == 2):
-	os.system("rosrun topic_tools mux_select mux_cmdvel /zumo/2/cmd_vel")
-	current_topic = 2
-if(current_topic ==2 and new_topic == 1):
-	os.system("rosrun topic_tools mux_select mux_cmdvel /zumo/1/cmd_vel")
-	current_topic = 1
+	#only change topics if we need to.
+	if(current_topic ==1 and new_topic == 2):
+		os.system("rosrun topic_tools mux_select mux_cmdvel /zumo/2/cmd_vel")
+		current_topic = 2
+	if(current_topic ==2 and new_topic == 1):
+		os.system("rosrun topic_tools mux_select mux_cmdvel /zumo/1/cmd_vel")
+		current_topic = 1
 	
 rospy.Subscriber('/zumo/prox_frontleft', Int8, handle_zumo_sensor)
 rospy.Subscriber('/zumo/prox_frontright', Int8, handle_zumo_sensor)
