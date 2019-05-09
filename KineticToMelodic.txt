@@ -19,3 +19,10 @@ $ cp /opt/ros/kinetic/share/turtle_tf2/rviz/turtle_rviz.rviz zumo.rviz
 
 $ cp /opt/ros/melodic/share/turtle_tf2/rviz/turtle_rviz.rviz zumo.rviz
 
+Task 8
+2.2
+$ sudo apt-get install ros-melodic-move-base ros-melodic-map-server ros-melodic-amcl
+
+2.4
+cp /opt/ros/melodic/share/turtle_tf2/rviz/turtle_rviz.rviz ../zumo.rviz
+
