@@ -11,6 +11,7 @@ from nav_msgs.msg import Odometry
 
 import math
 from math import sin, cos, pi
+
 x=0
 y=0
 th=0.0
@@ -52,6 +53,7 @@ def handle_zumo_pose(vel_msg):
 
 def publish_transform():
 	br = tf2_ros.TransformBroadcaster()
+
 	t = geometry_msgs.msg.TransformStamped()
 	
 	#	y+=vel_msg.linear.y
@@ -98,7 +100,9 @@ def loop():
 
 if __name__ == '__main__':
 	rospy.init_node('zumo_tf_broadcaster')
-	rospy.Subscriber('/zumo/cmd_vel', Twist, handle_zumo_pose)
+	rospy.Subscriber('/zumo/cmd_vel', 
+		Twist, 
+		handle_zumo_pose)
 
 while not rospy.core.is_shutdown():
 	loop()
