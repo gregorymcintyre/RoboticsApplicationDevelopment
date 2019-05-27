@@ -1,0 +1,70 @@
+
+Possibilities and barriers
+Safety - as is reported in a recent fact sheet by the World Health Organization [WHO
+2015], the number of people killed by accidents involving cars every year amounts to
+about 1.25 million, half of which consisting of pedestrians and cyclists. This number
+is expected to grow in future years, in the absence of corrective measures.
+In general, 90% of car accidents are caused by human mistakes [NHTSA 2008]. In
+addition to that, NHTSA14 and CDC [CDC 2015] report that, in 2014, about the
+30% of casualties on the road were caused by alcohol-conditioned driving (and 16%
+by drivers under the effect of other drugs). It is clear that those situations may be
+nearly completely avoided with the diffusion of autonomous vehicles: [Bimbraw 2015]
+forecasts that new technologies may prevent 5 million deaths between now and 2020.
+A total crash elimination would also result in different, lightweight designs for the
+car cabins, since today’s cars security measures and very robust bodies would be no
+longer needed. Smaller investments would also need to be placed in the deployment
+of road signage and traffic police.
+— Traffic optimization - the technologies under discussion would sensibly enhance the
+traffic situation, by reducing congestions and optimizing the traffic flow through a
+continuous communication between vehicles. This advantage is of course related to
+the previous one -given that it is estimated that 25% of traffic jams are caused by
+incidents [FHWA 2005]- but the traffic situation on the roads can also benefit of
+other reasons, such as the enlargement of safety distance, or the reduced time spent
+by drivers searching for parking spots (since the car itself could implement automatic
+and optimized search mechanisms).
+— Improved energy efficiency - the reduction of congestions and delays would also result
+in a significant reduction of emissions and energy consumption. Self-driving vehicles
+would also consume fuel in a more efficient way than human driven vehicles.
+— New vehicle ownership paradigms and business models - today, personal cars stay
+parked and unused for most of the time. Autonomous vehicles would make car sharing easier and more effective, with fleets of driverless vehicles capable of picking
+travellers, leaving them where they need to go and then serve other persons (the
+so-called self-driving taxies forecasted in [Sightline 2013]).
+Young, elderly and impaired people, or people currently unable to drive for any reason, would be given the possibility of being on the road. Moreover, with no need of
+accompanying those people, the amount of cars on the road would be reduced.
+New insurance models would be needed for cars that are uncapable of crashing and
+breaking the traffic rules [KPMG 2015].
+
+Costs - as reported by [The Wall Street Journal 2013], just the installation of LIDAR
+systems actually costs from $30,000 to $85,000, resulting in a price for the whole car
+that is obviously unaffordable for the average automobile user. Without drastic drops,
+price will be a serious obstacle for the penetration of the technology in the market.
+— Technology and Standards - there is still need for solid research for all autonomous
+vehicle techologies to be deployed on mass-marketed cars and not just on prototypes.
+For instance, V2V communication technologies, which are fundamental for overcoming the remaining issues of sensor-based autonomous cars, are still far from being
+extensively deployed.
+Standards should be developed to regulate verification and validation, to ensure reliability, and to protect the privacy of the data collected and exchanged (this issue has
+been discussed in section 5).
+— Coexistence with non-autonomous vehicles - in February, 2016 a Google Car caused
+the first reported car crash caused by a self-driving vehicle [The Verge 2016b]. The
+accident was caused by a car making contact with a passenger bus after having predicted -wrongly- that it was stopping. As acknowledged by Google itself in his montly
+report, “this is a classic example of the negotiation that’s a normal part of driving -
+we’re all trying to predict each other’s movements” [McKinsey Insights 2016]. Until
+vehicles driven by humans will still be on the streets, there will always be risks associated to missing negotiation (often made, by motorists, with simple glances) and
+incorrect predictions.
+— Skepticism - customers may not want to replace their traditional cars with selfdriving vehicles: they may find them dangerous or useless, or may not want to give
+up the activity of driving, which is found as pleasing or funny by most drivers. OEMs
+should therefore try to build interest and trust about their products, and to involve
+the demographics that might be more intrigued by revolutionary technologies.
+— Unemployment - not only drivers would lose their jobs, but also truckers, insurers,
+traffic wardens and all the professionals working in sectors related to traditional
+driving.
+— Liability - lawmakers should define clear rules about who is accountable in case of
+accidents involving autonomous vehicles. Several automakers -Google, Mercedes and
+Volvo to name some- have assured that they will accept complete liability in such
+cases [IEEE Spectrum 2015].
+
+CHALLENGES FOR SOFTWARE ENGINEERING
+Security
+Usability and Safety
+
+
