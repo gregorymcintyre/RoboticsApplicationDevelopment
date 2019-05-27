@@ -3,7 +3,6 @@ import rospy
 
 # Because of transformations
 import tf_conversions
-
 import tf2_ros
 import geometry_msgs.msg
 from geometry_msgs.msg import Twist
@@ -20,6 +19,7 @@ def handle_zumo_pose(vel_msg):
 	global x
 	global y
 	global th
+	
 	br = tf2_ros.TransformBroadcaster()
 	t = geometry_msgs.msg.TransformStamped()
 	print("x: "+str(x))
