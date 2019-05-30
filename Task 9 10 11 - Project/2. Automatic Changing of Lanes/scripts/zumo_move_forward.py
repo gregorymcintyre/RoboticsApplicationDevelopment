@@ -22,5 +22,5 @@ def move_forward(msg):
 	time.sleep(0.1)
 
 #bascially only move if we have sensor data, indicating a live robot
-rospy.Subscriber('/zumo/line_left', Int8, move_forward)
+rospy.Subscriber('/zumo/prox_left', Int8, move_forward)
 rospy.spin()
